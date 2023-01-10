@@ -1,4 +1,4 @@
-import './Main.css'
+import './HomePage.css'
 
 function MenuCard(props) {
    return (

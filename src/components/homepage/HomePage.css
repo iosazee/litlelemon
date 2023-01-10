@@ -1,0 +1,187 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-A);
+}
+
+.hero-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-summary h2 {
+    color: var(--primary-B);
+    font-size: 64px;
+    margin:  0;
+}
+
+.hero-summary h3 {
+    margin: -20px 20px 0 0;
+    color: var(--highlight-A);
+    font-size: 40px;
+}
+
+.hero-summary p {
+    color: var(--highlight-A);
+    font-size: 32px;
+}
+
+.hero-summary button {
+    width: 184px;
+    height: 32px;
+    font-size: 16px;
+    margin: 16px 0;
+    font-weight: 600;
+    background-color: var(--primary-B);
+    border: 5px solid var(--primary-B);
+    border-radius: 16px;
+}
+
+.hero-photo img {
+    width: 320px;
+    height: 320px;
+    margin-right: 72px;
+    border-radius: 16px;
+}
+
+
+
+.specials-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.specials-header h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: -50px;
+}
+
+.specials-header button {
+    width: 184px;
+    height: 32px;
+    font-size: 16px;
+    margin: 16px 0;
+    font-weight: 600;
+    background-color: var(--primary-B);
+    border: 5px solid var(--primary-B);
+    border-radius: 16px;
+}
+
+.specials-offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: var(--highlight-A);
+    margin: 16px;
+}
+
+.menu-card > img {
+   width: 100%;
+   height: 248px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.card-header h3 {
+    margin-right: 72px;
+}
+
+.card-header p {
+    margin-left: 72px;
+    color: var(--primary-B);
+}
+
+.menu-description {
+    width: 80%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer p {
+    margin-right: 72px;
+    font-size: 24px;
+}
+
+.card-footer p a {
+    text-decoration: none;
+}
+
+.card-footer img {
+    width: 50px;
+    margin-left: 72px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.reviews-ctn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 16px;
+    background-color: var(--highlight-A);
+}
+
+.review-card :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-card :first-child h3 {
+    margin-right: 24px;
+}
+
+.review-card :first-child p {
+    padding-top: 2px;
+}
+
+.review-card :nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.review-card :nth-child(2) p {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review-card :nth-child(2) img {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.review-card p {
+    padding: 8px;
+}
+

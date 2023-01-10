@@ -1,3 +1,5 @@
+import './HomePage.css';
+
 const ReviewCard = (props) => {
 
     return (
