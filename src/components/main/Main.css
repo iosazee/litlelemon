@@ -82,7 +82,7 @@
     align-items: center;
     width: 30%;
     background-color: var(--highlight-A);
-
+    margin: 16px;
 }
 
 .menu-card > img {
@@ -128,4 +128,59 @@
 .card-footer img {
     width: 50px;
     margin-left: 72px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.reviews-ctn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 16px;
+    background-color: var(--highlight-A);
+}
+
+.review-card :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-card :first-child h3 {
+    margin-right: 24px;
+}
+
+.review-card :first-child p {
+    padding-top: 2px;
+}
+
+.review-card :nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.review-card :nth-child(2) p {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review-card :nth-child(2) img {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.review-card p {
+    padding: 8px;
 }

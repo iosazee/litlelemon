@@ -1,5 +1,6 @@
 import './Main.css';
 import MenuCard from './MenuCard';
+import ReviewCard from './ReviewCard';
 
 
 function Main() {
@@ -26,6 +27,46 @@ function Main() {
             description: `This comes straight from grandma's secret recipe book. Every last ingredient
                         has been sourced and is authentic as can be imagined.`
         },
+    ]
+
+
+    const reviewInfo = [
+
+        {
+            heading: 'Rating :',
+            rating: '⭐⭐⭐⭐⭐',
+            img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
+            name: 'Jason Meffy',
+            reviewText: `LitleLemon Chicago serves the most delicious meals at a very pocket 
+                            friendly price. I give them a five out of five`
+        },
+
+        {
+            heading: 'Rating :',
+            rating: '⭐⭐⭐⭐⭐',
+            img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
+            name: 'Jason Meffy',
+            reviewText: `LitleLemon Chicago serves the most delicious meals at a very pocket 
+                            friendly price. I give them a five out of five`
+        },
+
+        {
+            heading: 'Rating :',
+            rating: '⭐⭐⭐⭐⭐',
+            img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
+            name: 'Jason Meffy',
+            reviewText: `LitleLemon Chicago serves the most delicious meals at a very pocket 
+                            friendly price. I give them a five out of five`
+        },
+
+        {
+            heading: 'Rating :',
+            rating: '⭐⭐⭐⭐⭐',
+            img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
+            name: 'Jason Meffy',
+            reviewText: `LitleLemon Chicago serves the most delicious meals at a very pocket 
+                            friendly price. I give them a five out of five`
+        }
     ]
 
 
@@ -64,7 +105,17 @@ function Main() {
                 </section>
                 <section className="testimonials">
                     <h2>Testimonials</h2>
-
+                    <div className='reviews-ctn'>
+                        {
+                            reviewInfo.map((info) => <ReviewCard 
+                            heading={info.heading}
+                            rating={info.rating}
+                            img={info.img}
+                            name={info.name}
+                            reviewText={info.reviewText}
+                            />)
+                        }
+                    </div>
                 </section>
                 <section className="about">
                     <h2>Little Lemon</h2>
