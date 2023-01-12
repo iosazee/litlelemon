@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-This project when completed will serve as a central hub that contains links to all my other deployed projectts.
+Check out the deployed application on https://litlelemon.netlify.app.
 
 ## Credits
 
