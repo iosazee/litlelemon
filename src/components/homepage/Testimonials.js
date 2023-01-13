@@ -6,6 +6,7 @@ const Testimonials = () => {
     const reviewInfo = [
 
         {
+            id: '1',
             heading: 'Rating :',
             rating: '⭐⭐⭐⭐⭐',
             img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
@@ -15,6 +16,7 @@ const Testimonials = () => {
         },
 
         {
+            id: '2',
             heading: 'Rating :',
             rating: '⭐⭐⭐⭐⭐',
             img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
@@ -24,6 +26,7 @@ const Testimonials = () => {
         },
 
         {
+            id: '3',
             heading: 'Rating :',
             rating: '⭐⭐⭐⭐⭐',
             img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
@@ -33,6 +36,7 @@ const Testimonials = () => {
         },
 
         {
+            id: '4',
             heading: 'Rating :',
             rating: '⭐⭐⭐⭐⭐',
             img: <img src="https://placehold.co/199x199"  alt="placeholder" />,
@@ -53,6 +57,7 @@ const Testimonials = () => {
                 img={info.img}
                 name={info.name}
                 reviewText={info.reviewText}
+                key={info.id}
                 />)
             }
         </div>

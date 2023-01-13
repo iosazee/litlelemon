@@ -40,6 +40,7 @@ const Specials = () => {
                 img={menu.img} 
                 price={menu.price} 
                 description={menu.description}
+                key={menu.title}
                 />)
             }
         </div>

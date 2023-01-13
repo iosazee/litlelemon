@@ -1,29 +1,23 @@
 import './BookingPage.css';
-import React, {useState} from 'react';
 
-const BookingForm = () => {
 
-    const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
 
-    const [form, setForm] = useState({
-        date: '',
-        time: availableTimes[0],
-        noOfGuests: '',
-        occasion: '',
-    });
+const BookingForm = ({state, dispatch, initialState}) => {
+
+
 
     const handleChange = (e) => {
-       setForm({
-        ...form,
-        [e.target.name]: e.target.value,
-    })
+        dispatch({
+            type: e.target.name,
+            payload: e.target.value,
+        })
     }
 
-    const clearForm = (e) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value
-    })
+    const clearForm = () => {
+        dispatch({
+            type: 'clearForm',
+            payload: initialState,
+        })
     }
 
     const handleSubmit = (e) => {
@@ -34,32 +28,34 @@ const BookingForm = () => {
 
     return (
         <section className='form'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-label='booking form'>
                 <fieldset>
                 <div className='field'>
                     <label htmlFor="res-date">Choose date</label>
                     <input type='date' id="res-date" name='date'
-                    value={form.date} onChange={handleChange}/>
+                    value={state.date} onChange={handleChange} />
                 </div>
                 <div className='field'>
                     <label htmlFor="res-time">Choose time</label>
-                    <select id="res-time " value={form.time} onChange={handleChange} name='time'>
-                        <option value={availableTimes[0]}>17:00</option>
-                        <option value={availableTimes[1]}>18:00</option>
-                        <option value={availableTimes[2]}>19:00</option>
-                        <option value={availableTimes[3]}>20:00</option>
-                        <option value={availableTimes[4]}>21:00</option>
-                        <option value={availableTimes[5]}>22:00</option>
+                    <select id="res-time " value={state.reservationTime} 
+                            onChange={handleChange} 
+                            name='reservationTime'>
+                        <option value={'17:00'}>17:00</option>
+                        <option value={'18:00'}>18:00</option>
+                        <option value={'19:00'}>19:00</option>
+                        <option value={'20:00'}>20:00</option>
+                        <option value={'21:00'}>21:00</option>
+                        <option value={'22:00'}>22:00</option>
                     </select>
                 </div>
                 <div className='field'>
                     <label htmlFor="guests">Number of guests</label>
                     <input type="number" placeholder="1" min="1" max="10" name='noOfGuests'
-                    id="guests" value={form.noOfGuests} onChange={handleChange}/>
+                    id="guests" value={state.noOfGuests} onChange={handleChange}/>
                 </div>
                 <div className='field'>
                     <label htmlFor="occasion">Occasion</label>
-                    <select id="occasion" value={form.occasion} onChange={handleChange} name='occasion'>
+                    <select id="occasion" value={state.occasion} onChange={handleChange} name='occasion'>
                         <option value={'birthday'}>Birthday</option>
                         <option value={'anniversary'}>Anniversary</option>
                         <option value={'engagement'}>Engagement</option>

@@ -2,10 +2,12 @@ import BookingForm from "./BookingForm";
 
 
 
-function BookingPage () {
+function BookingPage ({state, dispatch}) {
     return (
         <section>
-            <BookingForm />
+            <BookingForm state={state}
+             dispatch={dispatch}
+             />
         </section>
     )
 }
