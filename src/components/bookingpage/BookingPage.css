@@ -1,3 +1,10 @@
+.book > h1 {
+    text-align: center;
+    font-size: 48px;
+    color: var(--primary-A);
+
+}
+
 .form {
     display: flex;
     flex: 1;
@@ -6,7 +13,7 @@
     align-items: center;
     background-color: var(--primary-B);
 }
-  
+
 fieldset {
     display: flex;
     width: 480px;
