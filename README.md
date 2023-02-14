@@ -1,44 +1,41 @@
 # LitleLemon
 
-## Description
- 
-This is my capstone project of the Meta Front-end developer course. The project is a responsive web app that allows users of a fictional restaurant called litlelemon to reserve a table at the restaurant.  
+## Overview
+
+This application is a website for a fictional restaurant. It consists of a home screen which is divided into sections, a hero section, a special offers section where users can view the menu, an about section and the footer. Other pages of the website include a table reservation page featuring a form that users can used to reserve a table at the restaurant.
 
 
+## Screenshots
+<div display="flex">
+    <img src="./img/screenshot1.png" width="250" height="100">
+    <img src="./img/screenshot2.png" width="250" height="100">
+    <img src="./img/screenshot3.png" width="250" height="100">
+</div>
 
-## Installation
-
-N/A
+<div display="flex">
+    <img src="./img/screenshot4.png" width="250" height="100">
+    <img src="./img/screenshot5.png" width="250" height="100">
+</div>
 
 ## Usage
-
 Check out the deployed application on https://litlelemon.netlify.app.
 
 ## Credits
+* [Guidiance from the Meta React Front-End Developer Specialization offerred on Coursera:](https://www.coursera.org/professional-certificates/meta-front-end-developer)
 
-N/A
 
-## License
+## Wireframe
+Before commencing coding on the project a wireframe was built on figma which served as a guide during the coding phase.
+<img src="./img/screenshot6.png" width="250" height="100">
 
-MIT License
+## Languages, Frameworks and Libraries
+This app was built with
+* React JS
+* Javascript
+* HTML5
+* CSS3
 
-Copyright (c) 2023 Zee Mudia
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
